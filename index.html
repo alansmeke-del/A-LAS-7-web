@@ -889,7 +889,7 @@
         </div>
         <label class="privacy-label"><input type="checkbox" id="premiumPrivacy"> Acepto el <a href="/aviso-de-privacidad">Aviso de Privacidad</a></label>
         <div class="privacy-error" id="premiumPrivacyErr">Debes aceptar el Aviso de Privacidad para continuar.</div>
-        <a href="https://buy.stripe.com/cNi14nfszgheexEdoYafS00" class="plan-btn-premium" onclick="checkPremiumPrivacy(event)">Quiero entender mi dinero</a>
+        <button class="plan-btn-premium" onclick="checkPremiumPrivacy()">Quiero entender mi dinero</button>
       </div>
     </div>
   </div>
@@ -954,15 +954,15 @@
     if (checked) document.getElementById('freePrivacyErr').style.display = 'none';
   }
 
-  function checkPremiumPrivacy(e) {
+  function checkPremiumPrivacy() {
     const checked = document.getElementById('premiumPrivacy').checked;
     const errEl = document.getElementById('premiumPrivacyErr');
     if (!checked) {
-      e.preventDefault();
       errEl.style.display = 'block';
-    } else {
-      errEl.style.display = 'none';
+      return;
     }
+    errEl.style.display = 'none';
+    window.location.href = 'https://buy.stripe.com/cNi14nfszgheexEdoYafS00';
   }
 
   async function submitFree(btn) {
