@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviso de Privacidad — Vita News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A1814;
+    --ink-2: #2E2C28;
+    --ink-3: #4A4740;
+    --paper: #F7F3EC;
+    --paper-2: #EDE8DF;
+    --rule: rgba(26,24,20,0.12);
+    --rule-strong: rgba(26,24,20,0.25);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .top-rule { height: 4px; background: var(--ink); }
+  .top-rule-thin { height: 1px; background: var(--ink); margin-top: 3px; }
+
+  .masthead {
+    text-align: center;
+    padding: 2rem 2rem 1.2rem;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .masthead-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-block;
+  }
+  .masthead-tagline {
+    font-size: 15px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin-top: 0.6rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    border-bottom: 3px double var(--rule-strong);
+    border-top: 1px solid var(--rule-strong);
+  }
+  .nav-item {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    color: var(--ink);
+    text-decoration: none;
+    border-right: 1px solid var(--rule);
+    font-weight: 500;
+    transition: background 0.15s;
+  }
+  .nav-item:first-child { border-left: 1px solid var(--rule); }
+  .nav-item:hover { background: var(--paper-2); }
+
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+  }
+
+  .content h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+    line-height: 1.15;
+  }
+
+  .content .brand {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink-2);
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  .content section {
+    margin-bottom: 2rem;
+  }
+
+  .content section h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--ink-3);
+    margin-bottom: 0.6rem;
+  }
+
+  .content section p {
+    margin-bottom: 0;
+  }
+
+  .content a {
+    color: var(--ink);
+  }
+
+  .last-updated {
+    font-size: 11px;
+    color: var(--ink-3);
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.08em;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .footer {
+    background: var(--ink);
+    padding: 2rem;
+    text-align: center;
+  }
+  .footer-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    color: var(--paper);
+    margin-bottom: 0.4rem;
+  }
+  .footer-note {
+    font-size: 10px;
+    color: rgba(247,243,236,0.2);
+    letter-spacing: 0.05em;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  @media (max-width: 640px) {
+    .nav-bar { flex-wrap: wrap; }
+    .content { padding: 2rem 1.25rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-rule"></div>
+<div class="top-rule-thin"></div>
+
+<header class="masthead">
+  <a href="/" class="masthead-name">Vita News</a>
+  <div class="masthead-tagline">El newsletter que explica la economía en tu idioma</div>
+</header>
+
+<nav class="nav-bar">
+  <a class="nav-item" href="/">Inicio</a>
+</nav>
+
+<main class="content">
+  <h1>Aviso de Privacidad</h1>
+  <div class="brand">Vita News</div>
+
+  <p>En cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), Vita News, con domicilio de contacto en <a href="mailto:info@vitanews.com.mx">info@vitanews.com.mx</a>, le informa lo siguiente:</p>
+
+  <section>
+    <h2>Datos personales que recopilamos</h2>
+    <p>Únicamente recopilamos su dirección de correo electrónico al momento de suscribirse a nuestro newsletter.</p>
+  </section>
+
+  <section>
+    <h2>Finalidad del tratamiento</h2>
+    <p>Su correo electrónico se utiliza exclusivamente para el envío del newsletter diario de Vita News. No utilizamos sus datos para ninguna otra finalidad.</p>
+  </section>
+
+  <section>
+    <h2>Transferencia de datos</h2>
+    <p>Sus datos son procesados a través de MailerLite (<a href="https://mailerlite.com" target="_blank" rel="noopener">mailerlite.com</a>), plataforma de envío de correos electrónico, y Stripe (<a href="https://stripe.com" target="_blank" rel="noopener">stripe.com</a>) para procesar pagos del plan Premium. Ninguno de estos proveedores vende sus datos a terceros.</p>
+  </section>
+
+  <section>
+    <h2>Derechos ARCO</h2>
+    <p>Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales enviando un correo a <a href="mailto:info@vitanews.com.mx">info@vitanews.com.mx</a>. Respondemos en un plazo máximo de 20 días hábiles.</p>
+  </section>
+
+  <section>
+    <h2>Cancelación</h2>
+    <p>Puede cancelar su suscripción en cualquier momento haciendo clic en el enlace "Unsubscribe" al pie de cualquier correo que le enviemos.</p>
+  </section>
+
+  <section>
+    <h2>Cambios al aviso</h2>
+    <p>Cualquier modificación a este aviso será publicada en esta página.</p>
+  </section>
+
+  <div class="last-updated">Última actualización: 20 de mayo de 2026</div>
+</main>
+
+<footer class="footer">
+  <div class="footer-name">Vita News</div>
+  <div class="footer-note">© 2026 · vitanews.com.mx · El newsletter que explica la economía en tu idioma · Cancela cuando quieras</div>
+</footer>
+
+</body>
+</html>
