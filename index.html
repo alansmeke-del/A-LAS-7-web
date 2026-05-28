@@ -729,6 +729,182 @@
     /* MODAL */
     .modal { padding: 1.5rem; }
   }
+
+  /* PROMO POPUP */
+  .promo-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,24,20,0.85);
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .promo-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .promo-modal {
+    background: var(--paper);
+    border-top: 4px solid var(--gold);
+    max-width: 420px;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s;
+  }
+
+  .promo-overlay.active .promo-modal { transform: translateY(0); }
+
+  .promo-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--ink-3);
+    cursor: pointer;
+  }
+
+  .promo-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+  }
+
+  .promo-headline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .promo-subtext {
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+  }
+
+  .promo-code-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 0.4rem;
+  }
+
+  .promo-code-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 1.2rem;
+  }
+
+  .promo-code {
+    flex: 1;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    background: var(--ink);
+    padding: 0.6rem 1rem;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+  }
+
+  .promo-copy-btn {
+    background: var(--ink-2);
+    color: var(--paper);
+    border: none;
+    padding: 0.6rem 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .promo-copy-btn:hover { background: var(--ink-3); }
+
+  .promo-timer {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    border: 1px solid var(--rule);
+    background: var(--paper-2);
+  }
+
+  .promo-timer-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 0.2rem;
+  }
+
+  .promo-timer-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.8rem;
+    color: var(--red-accent);
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .promo-cta {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    background: var(--gold);
+    border: none;
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-bottom: 0.8rem;
+  }
+
+  .promo-cta:hover { background: var(--gold-light); }
+
+  .promo-dismiss {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-3);
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0.3rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: 300;
+  }
+
+  .promo-dismiss:hover { color: var(--ink); }
 </style>
 </head>
 <body>
@@ -909,6 +1085,27 @@
   <div class="footer-note">© 2026 · vitanews.com.mx · El newsletter que explica la economía en tu idioma · Cancela cuando quieras</div>
 </footer>
 
+<!-- PROMO POPUP -->
+<div class="promo-overlay" id="promoOverlay">
+  <div class="promo-modal">
+    <button class="promo-close" onclick="dismissPromo()">✕</button>
+    <div class="promo-eyebrow">Oferta por tiempo limitado</div>
+    <h3 class="promo-headline">Oferta exclusiva para ti</h3>
+    <p class="promo-subtext">Suscríbete a Premium hoy con 20% de descuento en tu primer mes</p>
+    <div class="promo-code-label">Tu código único</div>
+    <div class="promo-code-row">
+      <div class="promo-code" id="promoCode">VITA-…</div>
+      <button class="promo-copy-btn" onclick="copyPromoCode()">Copiar</button>
+    </div>
+    <div class="promo-timer">
+      <div class="promo-timer-label">Esta oferta expira en</div>
+      <div class="promo-timer-count" id="promoTimer">5:00</div>
+    </div>
+    <a class="promo-cta" href="https://buy.stripe.com/cNi14nfszgheexEdoYafS00">Aplicar descuento →</a>
+    <button class="promo-dismiss" onclick="dismissPromo()">No me interesa</button>
+  </div>
+</div>
+
 <!-- MODAL -->
 <div class="modal-overlay" id="freeModal" onclick="closeFreeModal(event)">
   <div class="modal">
@@ -969,6 +1166,55 @@
     }
     errEl.style.display = 'none';
     window.location.href = 'https://buy.stripe.com/cNi14nfszgheexEdoYafS00';
+  }
+
+  // Promo popup
+  var promoTimerInterval = null;
+
+  function dismissPromo() {
+    localStorage.setItem('vita_promo_seen', 'true');
+    document.getElementById('promoOverlay').classList.remove('active');
+    if (promoTimerInterval) { clearInterval(promoTimerInterval); promoTimerInterval = null; }
+  }
+
+  function copyPromoCode() {
+    const code = document.getElementById('promoCode').textContent;
+    navigator.clipboard.writeText(code).then(function() {
+      const btn = document.querySelector('.promo-copy-btn');
+      btn.textContent = '✓ Copiado';
+      setTimeout(function() { btn.textContent = 'Copiar'; }, 2000);
+    });
+  }
+
+  function startPromoTimer() {
+    let seconds = 5 * 60;
+    const timerEl = document.getElementById('promoTimer');
+    promoTimerInterval = setInterval(function() {
+      seconds--;
+      if (seconds <= 0) { dismissPromo(); return; }
+      const m = Math.floor(seconds / 60);
+      const s = seconds % 60;
+      timerEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    }, 1000);
+  }
+
+  async function showPromo() {
+    try {
+      const res = await fetch('https://gentle-laughter-desarrollo.up.railway.app/generate-promo', {
+        method: 'POST',
+        headers: { 'X-Vita-Secret': 'vitanews2026' }
+      });
+      const data = await res.json();
+      document.getElementById('promoCode').textContent = data.code || 'VITA-2026';
+    } catch (e) {
+      document.getElementById('promoCode').textContent = 'VITA-2026';
+    }
+    document.getElementById('promoOverlay').classList.add('active');
+    startPromoTimer();
+  }
+
+  if (!localStorage.getItem('vita_promo_seen')) {
+    setTimeout(showPromo, 15000);
   }
 
   async function submitFree(btn) {
