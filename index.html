@@ -1238,7 +1238,7 @@
     try {
       const res = await fetch('https://gentle-laughter-desarrollo.up.railway.app/generate-promo', {
         method: 'POST',
-        headers: { 'X-Vita-Secret': 'vitanews2026' }
+        headers: { 'X-ALAS7-Secret': 'vitanews2026' }
       });
       const data = await res.json();
       document.getElementById('promoCode').textContent = data.code || 'ALAS7-2026';
