@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vita News — El newsletter de negocios para México</title>
+<title>A LAS 7 — El newsletter de negocios para México</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -949,7 +949,7 @@
     <span id="masthead-date">Cargando fecha...</span>
     <span>Edición diaria · 7:00 AM</span>
   </div>
-  <div class="masthead-name">Vita News</div>
+  <div class="masthead-name">A LAS 7</div>
   <div class="masthead-tagline">El newsletter que explica la economía en tu idioma</div>
 </header>
 
@@ -959,7 +959,7 @@
   <a class="nav-item" href="#preview">Vista previa</a>
   <a class="nav-item" href="#planes">Planes</a>
   <a class="nav-item" href="#" onclick="openFreeModal(); return false;">Gratis</a>
-  <a class="nav-item active" href="https://buy.stripe.com/cNi14nfszgheexEdoYafS00">Premium →</a>
+  <a class="nav-item active" href="https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01">Premium →</a>
 </nav>
 
 <!-- HERO -->
@@ -1111,8 +1111,8 @@
 </div>
 
 <footer class="footer">
-  <div class="footer-name">Vita News</div>
-  <div class="footer-note">© 2026 · vitanews.com.mx · El newsletter que explica la economía en tu idioma · Cancela cuando quieras</div>
+  <div class="footer-name">A LAS 7</div>
+  <div class="footer-note">© 2026 · alas7.com · El newsletter que explica la economía en tu idioma · Cancela cuando quieras</div>
 </footer>
 
 <!-- PROMO POPUP -->
@@ -1128,7 +1128,7 @@
       <p class="promo-subtext">Este código es único y expira en 5 minutos — no se puede recuperar</p>
       <div class="promo-code-label">Tu código exclusivo</div>
       <div class="promo-code-row">
-        <div class="promo-code" id="promoCode">VITA-…</div>
+        <div class="promo-code" id="promoCode">ALAS7-…</div>
         <button class="promo-copy-btn" onclick="copyPromoCode()">Copiar</button>
       </div>
       <div class="promo-social-proof">Únete a los lectores que ya entienden su dinero</div>
@@ -1136,7 +1136,7 @@
         <div class="promo-timer-label">Oferta expira en</div>
         <div class="promo-timer-count" id="promoTimer">5:00</div>
       </div>
-      <a class="promo-cta" id="promoCta" href="https://buy.stripe.com/cNi14nfszgheexEdoYafS00">Quiero mi descuento ahora →</a>
+      <a class="promo-cta" id="promoCta" href="https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01">Quiero mi descuento ahora →</a>
       <button class="promo-dismiss" onclick="dismissPromo()">Prefiero pagar precio completo</button>
     </div>
   </div>
@@ -1201,7 +1201,7 @@
       return;
     }
     errEl.style.display = 'none';
-    window.location.href = 'https://buy.stripe.com/cNi14nfszgheexEdoYafS00';
+    window.location.href = 'https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01';
   }
 
   // Promo popup
@@ -1236,17 +1236,17 @@
 
   async function showPromo() {
     try {
-      const res = await fetch('https://gentle-laughter-desarrollo.up.railway.app/generate-promo', {
+      const res = await fetch('https://gentle-laughter-production-7f2c.up.railway.app/generate-promo', {
         method: 'POST',
-        headers: { 'X-Vita-Secret': 'vitanews2026' }
+        headers: { 'X-ALAS7-Secret': 'alas7secret2026' }
       });
       const data = await res.json();
-      document.getElementById('promoCode').textContent = data.code || 'VITA-2026';
+      document.getElementById('promoCode').textContent = data.code || 'ALAS7-2026';
     } catch (e) {
-      document.getElementById('promoCode').textContent = 'VITA-2026';
+      document.getElementById('promoCode').textContent = 'ALAS7-2026';
     }
     const code = document.getElementById('promoCode').textContent;
-    document.getElementById('promoCta').href = 'https://buy.stripe.com/cNi14nfszgheexEdoYafS00?prefilled_promo_code=' + encodeURIComponent(code);
+    document.getElementById('promoCta').href = 'https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01?prefilled_promo_code=' + encodeURIComponent(code);
     document.getElementById('promoOverlay').classList.add('active');
     startPromoTimer();
   }

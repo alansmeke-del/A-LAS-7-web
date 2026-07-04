@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A LAS 7 — El newsletter de negocios para México</title>
+<!-- CNAME managed separately -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#F6F2EA;color:#1B1A17;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  @keyframes a7spin{to{transform:rotate(360deg)}}
+  @keyframes a7spinr{to{transform:rotate(-360deg)}}
+  @keyframes a7pulse{0%,100%{opacity:.35}50%{opacity:1}}
+  @keyframes a7float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+</style>
+</head>
+<body>
+
+<div style="max-width:100%;overflow:hidden">
+
+<!-- ============ HEADER ============ -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(246,242,234,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,39,61,.1)">
+  <div style="max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="#top" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#14273D">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;letter-spacing:.01em;color:#14273D">A LAS</span>
+      <span style="width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid #14273D;border-radius:50%"><img src="assets/logo7-v2.png" alt="7" style="height:19px;width:auto;display:block"></span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:6px">
+      <a href="#preview" style="display:none;padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px" class="a7navlink">Vista previa</a>
+      <a href="#planes" class="a7navlink" style="padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px">Planes</a>
+      <a href="#" class="js-open-free" style="padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px">Gratis</a>
+      <button class="js-premium" style="margin-left:6px;padding:9px 17px;font-size:13.5px;font-weight:600;color:#14273D;background:#C08A2D;border:none;border-radius:8px;cursor:pointer;font-family:inherit">Suscribirme →</button>
+    </nav>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section style="max-width:1120px;margin:0 auto;padding:70px 28px 60px;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center">
+  <div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8C5E17;font-weight:500;margin-bottom:22px">
+      <span style="width:26px;height:1px;background:#C08A2D;display:block"></span>Todos los días · 7:00 AM · 5 minutos
+    </div>
+    <h1 data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .06s;font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.4rem,4.8vw,3.9rem);line-height:1.08;letter-spacing:-.015em;color:#14273D;margin-bottom:22px">Antes de mover tu dinero hoy,<br>entiende por qué.</h1>
+    <p data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;font-size:1.16rem;line-height:1.62;color:#4A4740;max-width:520px;margin-bottom:14px">A LAS 7 te explica qué pasó con el peso, las tasas y tu dinero en <strong style="color:#14273D;font-weight:600">5 minutos</strong>, cada mañana. Sin jerga, sin ruido, sin leer diez fuentes.</p>
+    <p data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .16s;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#78736A;letter-spacing:.02em;margin-bottom:30px">Para profesionales de 25 a 40 en México que quieren decidir mejor.</p>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .2s;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <button class="js-open-free" style="padding:15px 26px;font-size:15px;font-weight:600;color:#F6F2EA;background:#14273D;border:none;border-radius:10px;cursor:pointer;font-family:inherit">Suscríbete gratis</button>
+      <button class="js-premium" style="padding:15px 26px;font-size:15px;font-weight:600;color:#14273D;background:transparent;border:1.5px solid rgba(20,39,61,.28);border-radius:10px;cursor:pointer;font-family:inherit">Ir a Premium · $149/mes</button>
+    </div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .24s;font-size:13px;color:#78736A;margin-top:14px">Sin tarjeta para empezar · Cancela cuando quieras</div>
+  </div>
+
+  <!-- CLOCK / COUNTDOWN VISUAL -->
+  <div data-reveal style="opacity:0;transform:translateY(26px);transition:.8s cubic-bezier(.2,.7,.2,1) .1s;display:flex;flex-direction:column;align-items:center;gap:26px">
+    <div style="position:relative;width:260px;height:260px;animation:a7float 6s ease-in-out infinite">
+      <svg viewBox="0 0 200 200" width="260" height="260" style="position:absolute;inset:0;overflow:visible">
+        <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(20,39,61,.14)" stroke-width="1.5"></circle>
+        <g stroke="#14273D" stroke-width="1.6" stroke-linecap="round">
+          <line x1="100" y1="16" x2="100" y2="27" transform="rotate(0 100 100)"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(30 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(60 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="16" x2="100" y2="27" transform="rotate(90 100 100)"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(120 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(150 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="16" x2="100" y2="27" transform="rotate(180 100 100)"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(210 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(240 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="16" x2="100" y2="27" transform="rotate(270 100 100)"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(300 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+          <line x1="100" y1="18" x2="100" y2="26" transform="rotate(330 100 100)" stroke="#C08A2D" stroke-width="2"></line>
+        </g>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#C08A2D" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="70 370" style="transform-origin:100px 100px;animation:a7spin 8s linear infinite"></circle>
+      </svg>
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <img src="assets/logo7-v2.png" alt="7" style="height:120px;width:auto;display:block">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.3em;color:#8C5E17;margin-top:6px">A.M.</div>
+      </div>
+    </div>
+    <div style="text-align:center;background:#fff;border:1px solid rgba(20,39,61,.1);border-radius:14px;padding:16px 26px;box-shadow:0 10px 30px -18px rgba(20,39,61,.4)">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#78736A;margin-bottom:8px">Próxima edición en</div>
+      <div style="display:flex;align-items:baseline;justify-content:center;gap:4px;font-family:'IBM Plex Mono',monospace;color:#14273D">
+        <span id="cd-h" style="font-size:30px;font-weight:500">--</span><span style="font-size:14px;color:#8C5E17">h</span>
+        <span id="cd-m" style="font-size:30px;font-weight:500;margin-left:8px">--</span><span style="font-size:14px;color:#8C5E17">m</span>
+        <span id="cd-s" style="font-size:30px;font-weight:500;margin-left:8px">--</span><span style="font-size:14px;color:#8C5E17">s</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div style="border-top:1px solid rgba(20,39,61,.1);border-bottom:1px solid rgba(20,39,61,.1);background:#F1EBE0">
+  <div style="max-width:1120px;margin:0 auto;padding:16px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 30px;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.06em;color:#6A665D">
+    <span style="text-transform:uppercase;letter-spacing:.14em;color:#9A9488">Leemos por ti</span>
+    <span style="color:#14273D">Banxico</span><span style="opacity:.4">·</span>
+    <span style="color:#14273D">Reuters</span><span style="opacity:.4">·</span>
+    <span style="color:#14273D">Bloomberg</span><span style="opacity:.4">·</span>
+    <span style="color:#14273D">El Financiero</span><span style="opacity:.4">·</span>
+    <span style="color:#14273D">Wall Street Journal</span>
+  </div>
+</div>
+
+<!-- ============ TRIO / QUÉ ES ============ -->
+<section style="max-width:1120px;margin:0 auto;padding:76px 28px 40px">
+  <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);text-align:center;margin-bottom:44px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8C5E17;margin-bottom:12px">Qué es A LAS 7</div>
+    <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.15;color:#14273D;max-width:640px;margin:0 auto">Un correo. Cada mañana. Y por fin entiendes tu dinero.</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px solid rgba(20,39,61,.1);border-radius:16px;padding:30px 26px">
+      <div style="width:44px;height:44px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;color:#14273D;margin-bottom:20px">5′</div>
+      <div style="font-family:'Newsreader',serif;font-size:1.35rem;color:#14273D;margin-bottom:8px">Se lee en 5 minutos</div>
+      <p style="font-size:14.5px;line-height:1.6;color:#5A564E">Lo importante del día, resumido y en orden. Sin scroll infinito ni pestañas abiertas.</p>
+    </div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;background:#fff;border:1px solid rgba(20,39,61,.1);border-radius:16px;padding:30px 26px">
+      <div style="width:44px;height:44px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:#14273D;margin-bottom:20px">7:00</div>
+      <div style="font-family:'Newsreader',serif;font-size:1.35rem;color:#14273D;margin-bottom:8px">Llega a las 7 en punto</div>
+      <p style="font-size:14.5px;line-height:1.6;color:#5A564E">Puntual, como un buen café. Lo lees antes de que empiece el ruido del día.</p>
+    </div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .19s;background:#fff;border:1px solid rgba(20,39,61,.1);border-radius:16px;padding:30px 26px">
+      <div style="width:44px;height:44px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;color:#14273D;margin-bottom:20px">$0</div>
+      <div style="font-family:'Newsreader',serif;font-size:1.35rem;color:#14273D;margin-bottom:8px">Empieza sin pagar</div>
+      <p style="font-size:14.5px;line-height:1.6;color:#5A564E">Suscríbete gratis y decide después. El plan Premium desbloquea el análisis a fondo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREVIEW ============ -->
+<section id="preview" style="max-width:1120px;margin:0 auto;padding:56px 28px 76px">
+  <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:30px;border-bottom:2px solid #14273D;padding-bottom:14px">
+    <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,3vw,2.2rem);color:#14273D">Así se ve una edición real</h2>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#78736A">Gratis vs. Premium</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+    <!-- GRATIS -->
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px solid rgba(20,39,61,.12);border-radius:16px;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#F1EBE0;border-bottom:1px solid rgba(20,39,61,.1)">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#5A564E">Plan Gratuito</span>
+        <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:#E2DCD0;color:#5A564E;font-weight:600">Gratis</span>
+      </div>
+      <div style="padding:22px 20px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8C5E17;margin-bottom:6px">Historia principal</div>
+        <div style="font-family:'Newsreader',serif;font-size:1.28rem;line-height:1.3;color:#14273D;margin-bottom:16px">El petróleo rozó los $101 — y tu gasolina lo va a sentir</div>
+        <div style="display:flex;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#14273D;min-width:82px;padding-top:2px">Qué pasó</span><span style="font-size:14.5px;line-height:1.55;color:#4A4740">El barril subió a su nivel más alto desde 2022 tras nuevos recortes de producción.</span></div>
+        <div style="display:flex;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#14273D;min-width:82px;padding-top:2px">Tu bolsillo</span><span style="font-size:14.5px;line-height:1.55;color:#4A4740">La gasolina podría subir en 2–3 semanas. No de golpe, pero va a subir.</span></div>
+        <div style="position:relative">
+          <div style="display:flex;gap:12px;margin-bottom:12px;filter:blur(4px);opacity:.35;user-select:none"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#14273D;min-width:82px">Por qué</span><span style="font-size:14.5px;line-height:1.55;color:#4A4740">La Fed no bajará tasas pronto y eso mantiene al dólar fuerte, encareciendo todo lo importado.</span></div>
+          <div style="display:flex;gap:12px;filter:blur(4px);opacity:.35;user-select:none"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#14273D;min-width:82px">Qué hacer</span><span style="font-size:14.5px;line-height:1.55;color:#4A4740">Mover ahorros ociosos a CETES a 28 días toma 20 minutos y hoy paga cerca del 9% anual.</span></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="display:flex;align-items:center;gap:8px;background:#14273D;color:#F6F2EA;font-size:12px;font-weight:600;padding:9px 16px;border-radius:30px;box-shadow:0 8px 24px -10px rgba(20,39,61,.6)">
+              <span style="width:12px;height:12px;border:1.5px solid #C08A2D;border-radius:3px;display:inline-block;position:relative"></span>Contenido Premium
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;background:#14273D;border:1px solid #14273D;border-radius:16px;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#1C3350;border-bottom:1px solid rgba(255,255,255,.08)">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#B9C4D2">Plan Premium</span>
+        <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:#C08A2D;color:#14273D;font-weight:700">Premium</span>
+      </div>
+      <div style="padding:22px 20px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#DBA845;margin-bottom:6px">Historia principal</div>
+        <div style="font-family:'Newsreader',serif;font-size:1.28rem;line-height:1.3;color:#F6F2EA;margin-bottom:16px">El petróleo rozó los $101 — y tu gasolina lo va a sentir</div>
+        <div style="display:flex;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#DBA845;min-width:82px;padding-top:2px">Qué pasó</span><span style="font-size:14.5px;line-height:1.55;color:#C8D1DC">El barril subió a su nivel más alto desde 2022 tras nuevos recortes de producción.</span></div>
+        <div style="display:flex;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#DBA845;min-width:82px;padding-top:2px">Tu bolsillo</span><span style="font-size:14.5px;line-height:1.55;color:#C8D1DC">La gasolina podría subir en 2–3 semanas. No de golpe, pero va a subir.</span></div>
+        <div style="display:flex;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#DBA845;min-width:82px;padding-top:2px">Por qué</span><span style="font-size:14.5px;line-height:1.55;color:#C8D1DC">La Fed no bajará tasas pronto y eso mantiene al dólar fuerte, encareciendo todo lo importado.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;color:#DBA845;min-width:82px;padding-top:2px">Qué hacer</span><span style="font-size:14.5px;line-height:1.55;color:#C8D1DC">Mover ahorros ociosos a CETES a 28 días toma 20 minutos y hoy paga cerca del 9% anual.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANES ============ -->
+<section id="planes" style="background:#14273D;padding:80px 28px">
+  <div style="max-width:940px;margin:0 auto">
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);text-align:center;margin-bottom:48px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#DBA845;margin-bottom:12px">Elige tu plan</div>
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.9rem,3.6vw,2.7rem);color:#F6F2EA;line-height:1.15">Empieza gratis. Sube a Premium cuando quieras más.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+      <!-- FREE -->
+      <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#182E48;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:34px 30px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8FA0B4;margin-bottom:14px">Plan Gratuito</div>
+        <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:20px"><span style="font-family:'Newsreader',serif;font-size:3rem;color:#F6F2EA;line-height:1">$0</span><span style="font-size:14px;color:#8FA0B4">para siempre</span></div>
+        <div style="height:1px;background:rgba(255,255,255,.1);margin-bottom:20px"></div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:26px">
+          <div style="display:flex;gap:10px;font-size:15px;color:#D3DAE2;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Las noticias más importantes del día</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#D3DAE2;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Qué pasó y cómo te afecta directamente</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#D3DAE2;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Una acción concreta por noticia</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#6C7C90;line-height:1.45;text-decoration:line-through"><span style="color:#3E5470;flex-shrink:0">✕</span>El análisis completo de cada noticia</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#6C7C90;line-height:1.45;text-decoration:line-through"><span style="color:#3E5470;flex-shrink:0">✕</span>La lección del día completa</div>
+        </div>
+        <button class="js-open-free" style="width:100%;padding:14px;text-align:center;background:transparent;border:1.5px solid rgba(255,255,255,.25);color:#F6F2EA;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">Suscríbete gratis</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;position:relative;background:linear-gradient(180deg,#1F395A,#1A3050);border:1.5px solid #C08A2D;border-radius:18px;padding:34px 30px">
+        <div style="position:absolute;top:-11px;left:30px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;background:#C08A2D;color:#14273D;padding:4px 12px;border-radius:20px;font-weight:700">Recomendado</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#DBA845;margin-bottom:14px">Plan Premium</div>
+        <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:20px"><span style="font-family:'Newsreader',serif;font-size:3rem;color:#DBA845;line-height:1">$149</span><span style="font-size:14px;color:#9FB0C4">MXN / mes</span></div>
+        <div style="height:1px;background:rgba(255,255,255,.12);margin-bottom:20px"></div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:24px">
+          <div style="display:flex;gap:10px;font-size:15px;color:#E6EAF0;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Todo lo del plan gratis</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#E6EAF0;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Por qué pasó — la causa real detrás de cada noticia</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#E6EAF0;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Qué hacer tú, específicamente, esta semana</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#E6EAF0;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>La lección del día completa</div>
+          <div style="display:flex;gap:10px;font-size:15px;color:#E6EAF0;line-height:1.45"><span style="color:#DBA845;flex-shrink:0">✓</span>Ediciones de autor para México</div>
+        </div>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#C8D1DC;margin-bottom:6px;cursor:pointer"><input type="checkbox" id="premiumPrivacy" style="accent-color:#C08A2D;width:15px;height:15px"> Acepto el <a href="aviso-de-privacidad.html" style="color:#DBA845">Aviso de Privacidad</a></label>
+        <div id="premiumPrivacyErr" style="display:none;font-size:11.5px;color:#F0A990;margin-bottom:8px">Debes aceptar el Aviso de Privacidad para continuar.</div>
+        <button class="js-premium" style="width:100%;padding:15px;text-align:center;background:#C08A2D;border:none;color:#14273D;border-radius:10px;font-size:14.5px;font-weight:700;cursor:pointer;font-family:inherit">Quiero entender mi dinero →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section style="max-width:1120px;margin:0 auto;padding:76px 28px">
+  <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);text-align:center;margin-bottom:40px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8C5E17;margin-bottom:12px">Lo que dicen los lectores</div>
+    <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.4rem);color:#14273D">Miles empiezan su día A LAS 7</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px dashed rgba(20,39,61,.28);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;min-height:210px">
+      <div style="font-family:'Newsreader',serif;font-size:2.4rem;color:#C08A2D;line-height:.4;height:18px">“</div>
+      <p style="flex:1;font-size:14px;line-height:1.6;color:#9A958B;font-style:italic">Espacio reservado para un testimonio real. Aquí irá la frase textual de un lector cuando lo tengas.</p>
+      <div style="display:flex;align-items:center;gap:10px"><span style="width:34px;height:34px;border-radius:50%;background:#EDE7DC;flex-shrink:0"></span><span style="font-size:12.5px;color:#78736A"><strong style="color:#3A3A34">Nombre del lector</strong><br>Profesión · Ciudad</span></div>
+    </div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;background:#fff;border:1px dashed rgba(20,39,61,.28);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;min-height:210px">
+      <div style="font-family:'Newsreader',serif;font-size:2.4rem;color:#C08A2D;line-height:.4;height:18px">“</div>
+      <p style="flex:1;font-size:14px;line-height:1.6;color:#9A958B;font-style:italic">Espacio reservado para un testimonio real. Aquí irá la frase textual de un lector cuando lo tengas.</p>
+      <div style="display:flex;align-items:center;gap:10px"><span style="width:34px;height:34px;border-radius:50%;background:#EDE7DC;flex-shrink:0"></span><span style="font-size:12.5px;color:#78736A"><strong style="color:#3A3A34">Nombre del lector</strong><br>Profesión · Ciudad</span></div>
+    </div>
+    <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .19s;background:#fff;border:1px dashed rgba(20,39,61,.28);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;min-height:210px">
+      <div style="font-family:'Newsreader',serif;font-size:2.4rem;color:#C08A2D;line-height:.4;height:18px">“</div>
+      <p style="flex:1;font-size:14px;line-height:1.6;color:#9A958B;font-style:italic">Espacio reservado para un testimonio real. Aquí irá la frase textual de un lector cuando lo tengas.</p>
+      <div style="display:flex;align-items:center;gap:10px"><span style="width:34px;height:34px;border-radius:50%;background:#EDE7DC;flex-shrink:0"></span><span style="font-size:12.5px;color:#78736A"><strong style="color:#3A3A34">Nombre del lector</strong><br>Profesión · Ciudad</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section style="background:#F1EBE0;border-top:1px solid rgba(20,39,61,.1)">
+  <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);max-width:720px;margin:0 auto;padding:76px 28px;text-align:center">
+    <div style="width:52px;height:52px;margin:0 auto 22px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center"><img src="assets/logo7-v2.png" alt="7" style="height:30px;width:auto;display:block"></div>
+    <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.14;color:#14273D;margin-bottom:16px">Mañana, a las 7, entiende tu dinero.</h2>
+    <p style="font-size:1.1rem;line-height:1.6;color:#5A564E;margin-bottom:30px">Empieza gratis hoy. Sin tarjeta, sin compromiso, cancela cuando quieras.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+      <button class="js-open-free" style="padding:15px 28px;font-size:15px;font-weight:600;color:#F6F2EA;background:#14273D;border:none;border-radius:10px;cursor:pointer;font-family:inherit">Suscríbete gratis</button>
+      <button class="js-premium" style="padding:15px 28px;font-size:15px;font-weight:600;color:#14273D;background:#C08A2D;border:none;border-radius:10px;cursor:pointer;font-family:inherit">Ir a Premium · $149/mes</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:#14273D;color:#B9C4D2;padding:56px 28px 28px">
+  <div style="max-width:1120px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Newsreader',serif;font-size:19px;font-weight:600;color:#F6F2EA">A LAS</span><span style="width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border:1.4px solid #DBA845;border-radius:50%"><img src="assets/logo7-v2.png" alt="7" style="height:17px;width:auto;display:block"></span></div>
+        <p style="font-size:13.5px;line-height:1.6;color:#8FA0B4;max-width:280px">El newsletter que te explica la economía en tu idioma. Cada mañana, a las 7 en punto.</p>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#DBA845;margin-bottom:14px">Navega</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:13.5px">
+          <a href="#preview" style="color:#B9C4D2;text-decoration:none">Vista previa</a>
+          <a href="#planes" style="color:#B9C4D2;text-decoration:none">Planes</a>
+          <a href="#" class="js-open-free" style="color:#B9C4D2;text-decoration:none">Suscríbete gratis</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#DBA845;margin-bottom:14px">Legal</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:13.5px">
+          <a href="aviso-de-privacidad.html" style="color:#B9C4D2;text-decoration:none">Aviso de Privacidad</a>
+          <a href="terminos.html" style="color:#B9C4D2;text-decoration:none">Términos y Condiciones</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#DBA845;margin-bottom:14px">Síguenos</div>
+        <div style="display:flex;gap:10px">
+          <a href="#" aria-label="Instagram" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.2);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#B9C4D2;text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace">IG</a>
+          <a href="#" aria-label="X" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.2);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#B9C4D2;text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace">X</a>
+          <a href="#" aria-label="LinkedIn" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.2);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#B9C4D2;text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace">in</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;padding-top:22px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6C7C90;letter-spacing:.03em">
+      <span>© 2026 A LAS 7 · alas7.com</span>
+      <span>[ Dirección física — CDMX, México ] · Cancela cuando quieras</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PROMO POPUP ============ -->
+<div id="promoOverlay" style="position:fixed;inset:0;background:rgba(20,25,32,.78);backdrop-filter:blur(4px);z-index:400;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s">
+  <div style="background:#F6F2EA;border-radius:20px;max-width:440px;width:100%;position:relative;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);transform:translateY(20px);transition:transform .3s" id="promoModal">
+    <div style="background:#14273D;color:#DBA845;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:9px 24px;position:relative">
+      Solo para nuevos lectores
+      <button id="promoClose" style="position:absolute;top:6px;right:12px;background:none;border:none;font-size:15px;color:rgba(255,255,255,.5);cursor:pointer;line-height:1">✕</button>
+    </div>
+    <div style="padding:28px 30px 30px">
+      <div style="display:flex;gap:20px;align-items:center;margin-bottom:20px">
+        <div style="position:relative;width:78px;height:78px;flex-shrink:0">
+          <svg viewBox="0 0 100 100" width="78" height="78" style="transform:rotate(-90deg)">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(20,39,61,.12)" stroke-width="6"></circle>
+            <circle id="promoRing" cx="50" cy="50" r="44" fill="none" stroke="#C08A2D" stroke-width="6" stroke-linecap="round" stroke-dasharray="276.5" stroke-dashoffset="0"></circle>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:500;color:#14273D" id="promoTimer">5:00</div>
+        </div>
+        <div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:1.55rem;line-height:1.1;color:#14273D;margin-bottom:5px">Un descuento, solo para ti</h3>
+          <div style="font-size:12.5px;color:#7A5615;font-weight:600">Aplícalo antes de que expire el código</div>
+        </div>
+      </div>
+      <div style="font-size:13.5px;line-height:1.55;color:#5A564E;margin-bottom:18px">Este código es <strong style="color:#14273D">único</strong> y solo funciona en los próximos 5 minutos. Se aplica sobre tu suscripción Premium de $149 MXN/mes.</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#78736A;margin-bottom:8px">Tu código exclusivo</div>
+      <div style="display:flex;border:2px solid #C08A2D;border-radius:11px;overflow:hidden;margin-bottom:20px">
+        <div id="promoCode" style="flex:1;font-family:'IBM Plex Mono',monospace;font-size:1.35rem;color:#DBA845;background:#14273D;padding:14px 16px;letter-spacing:.08em;display:flex;align-items:center">ALAS7-…</div>
+        <button id="promoCopy" style="background:#C08A2D;color:#14273D;border:none;padding:0 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap">Copiar</button>
+      </div>
+      <a id="promoCta" href="https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01" style="display:block;width:100%;padding:15px;text-align:center;background:#14273D;color:#F6F2EA;border-radius:11px;font-size:14.5px;font-weight:600;text-decoration:none;margin-bottom:10px">Aplicar mi descuento ahora →</a>
+      <button class="js-promo-dismiss" style="display:block;width:100%;text-align:center;font-size:12.5px;color:#9A958B;background:none;border:none;cursor:pointer;padding:4px;font-family:inherit">Prefiero pagar precio completo</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FREE MODAL ============ -->
+<div id="freeModal" style="position:fixed;inset:0;background:rgba(20,25,32,.78);backdrop-filter:blur(4px);z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .25s">
+  <div style="background:#F6F2EA;border-radius:20px;max-width:420px;width:100%;position:relative;padding:34px 32px 30px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);transform:translateY(16px);transition:transform .25s" id="freeModalCard">
+    <button id="freeClose" style="position:absolute;top:16px;right:18px;background:none;border:none;font-size:16px;color:#9A958B;cursor:pointer">✕</button>
+    <div style="width:44px;height:44px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><img src="assets/logo7-v2.png" alt="7" style="height:26px;width:auto;display:block"></div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8C5E17;margin-bottom:8px">Plan Gratuito</div>
+    <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:1.6rem;color:#14273D;margin-bottom:8px">Empieza a leer mañana</h3>
+    <p style="font-size:14px;line-height:1.55;color:#5A564E;margin-bottom:22px">Recibe A LAS 7 cada mañana a las 7:00. Sin tarjeta, sin compromiso.</p>
+    <input type="hidden" id="referralCode" name="referral_code">
+    <input type="email" id="freeEmail" placeholder="tu@correo.com" style="width:100%;background:#fff;border:1.5px solid rgba(20,39,61,.2);border-radius:10px;color:#1B1A17;font-family:inherit;font-size:15px;padding:13px 15px;outline:none;margin-bottom:14px">
+    <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#4A4740;margin-bottom:6px;cursor:pointer"><input type="checkbox" id="freePrivacy" style="accent-color:#C08A2D;width:15px;height:15px"> Acepto el <a href="aviso-de-privacidad.html" style="color:#14273D">Aviso de Privacidad</a></label>
+    <div id="freePrivacyErr" style="display:none;font-size:11.5px;color:#B4472B;margin-bottom:8px">Debes aceptar el Aviso de Privacidad para continuar.</div>
+    <button id="freeSubmitBtn" disabled style="width:100%;padding:14px;background:#14273D;color:#F6F2EA;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;opacity:.45;margin-top:4px">Suscribirme gratis</button>
+    <div style="font-size:11.5px;color:#9A958B;text-align:center;margin-top:12px">Puedes cancelar en cualquier momento.</div>
+    <div id="freeMsg" style="display:none;font-size:13px;text-align:center;margin-top:12px;padding:11px 13px;border-radius:9px;line-height:1.5"></div>
+  </div>
+</div>
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const $ = (id) => document.getElementById(id);
+
+    // ---- Config (preservado del sitio original, intacto) ----
+    const STRIPE = 'https://buy.stripe.com/14AcN50xF8OM2OW4SsafS01';
+    const API = 'https://gentle-laughter-production-7f2c.up.railway.app';
+    const SECRET = 'alas7secret2026';
+    const GROUP = '187372665902728776';
+    const BEARER = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiYmMxOWIzNDQ5YjExYTVhZGZmNTcxY2EzYWUxMThiOWUyMDZjNzczYjk4OGQ4ZWIzMjc5MDJjNGRhZDc4ZTc3NDM1MjNlYjg1N2E3Njg5NmMiLCJpYXQiOjE3NzgxODA5MDkuMTcwNTM1LCJuYmYiOjE3NzgxODA5MDkuMTcwNTM5LCJleHAiOjQ5MzM4NTQ1MDkuMTYxMTczLCJzdWIiOiIyMzE3MDUwIiwic2NvcGVzIjpbXX0.ddkuTCzKcyiWh2lY7n4pZOTT2zKycDRTZvt0m96VKQejjKs2nw7_8YmnC8FVzccHNSK9IRxkX48K2n3gDZ2wLPXOZOJjwupdpuIJPJBdkEY9nR-3wcIe3gWlUxvByMQ0ZuHWNCZIVk5kr-ovcmIT1W74a24yOXCDQvLKqmSdVXfl6PPBYWZ2fosHuAvY1VovHXx1isz-7cvkUt6wkRYdqch9sQGG3s1NvMyXzsxoLwhR9_p41-rhDssvARB2B3ack1X2reY5d6KD8QqE8QUc-AELjtHZ5sqVQZNKmVvu7lA1PSJLTta31XXgnEgX4E6ZhQ686jQAZjzWUE48SkNDDiflQvUqN-w-5ZGe0PyFB3oGp5opc-eOhKCi3gGTgdi04hdAa56aXyarq_KFB38dTBAnQPMgGXf15rjLI57Hts4_D5sVFlwYduj7tujd-l8rsM17t3AGOwzlS9E69t8BavEHRoFwSppyHUsO_Tj3xZMG7myKcOQxWvlnXf2J7OgBPgx1NUtlhEyWK6JgDWD8NZYEZNK_t-IIJ92YXoVLAo_YFiAqbt-CA2ozZYExnEkDh4sToIAOkfj5hWD-7NVO2g5gKSuLPOuLD27x8rYELv2fV9ntUEtCyDHknXs0wl6nBzNb5WbDQJLe6DV8-pE38AOjjW4C6hSYhWySHNpqp7s';
+    const SESSION_KEY = 'vita_promo_seen';
+    const PROMO_SECONDS = 5 * 60;
+    const PROMO_DELAY = 10000;
+
+    // ---- Referral capture (?ref=) ----
+    const refParam = new URLSearchParams(window.location.search).get('ref');
+    if (refParam && $('referralCode')) $('referralCode').value = refParam;
+
+    // ---- Live countdown a la próxima edición (7:00 AM) ----
+    const tick = () => {
+      const now = new Date();
+      const target = new Date(now);
+      target.setHours(7, 0, 0, 0);
+      if (now >= target) target.setDate(target.getDate() + 1);
+      let diff = Math.max(0, target - now);
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      const pad = (n) => String(n).padStart(2, '0');
+      if ($('cd-h')) $('cd-h').textContent = pad(h);
+      if ($('cd-m')) $('cd-m').textContent = pad(m);
+      if ($('cd-s')) $('cd-s').textContent = pad(s);
+    };
+    tick();
+    setInterval(tick, 1000);
+
+    // ---- Free modal ----
+    const openFree = () => { $('freeModal').style.opacity = '1'; $('freeModal').style.pointerEvents = 'all'; $('freeModalCard').style.transform = 'translateY(0)'; };
+    const resetFree = () => { $('freePrivacy').checked = false; $('freeSubmitBtn').disabled = true; $('freeSubmitBtn').style.opacity = '.45'; $('freePrivacyErr').style.display = 'none'; };
+    const closeFree = () => { $('freeModal').style.opacity = '0'; $('freeModal').style.pointerEvents = 'none'; $('freeModalCard').style.transform = 'translateY(16px)'; resetFree(); };
+    document.querySelectorAll('.js-open-free').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openFree(); }));
+    $('freeClose').addEventListener('click', closeFree);
+    $('freeModal').addEventListener('click', (e) => { if (e.target === $('freeModal')) closeFree(); });
+    $('freePrivacy').addEventListener('change', () => {
+      const c = $('freePrivacy').checked;
+      $('freeSubmitBtn').disabled = !c;
+      $('freeSubmitBtn').style.opacity = c ? '1' : '.45';
+      if (c) $('freePrivacyErr').style.display = 'none';
+    });
+
+    const submitFree = async (btn) => {
+      const email = $('freeEmail').value.trim();
+      const msgEl = $('freeMsg');
+      msgEl.style.display = 'none';
+      if (!$('freePrivacy').checked) { $('freePrivacyErr').style.display = 'block'; return; }
+      if (!email || !email.includes('@')) {
+        msgEl.style.display = 'block'; msgEl.style.background = '#fef2f2'; msgEl.style.color = '#991b1b'; msgEl.style.border = '1px solid #fecaca';
+        msgEl.textContent = 'Por favor ingresa un email válido.'; return;
+      }
+      btn.disabled = true; btn.textContent = 'Enviando...';
+      try {
+        const res = await fetch(API + '/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + BEARER },
+          body: JSON.stringify({ email: email, groups: [GROUP], referral_code: $('referralCode').value })
+        });
+        if (res.ok) {
+          msgEl.style.display = 'block'; msgEl.style.background = '#f0fdf4'; msgEl.style.color = '#166534'; msgEl.style.border = '1px solid #bbf7d0';
+          msgEl.textContent = '¡Listo! Revisa tu correo para confirmar tu suscripción.';
+          $('freeEmail').value = '';
+        } else { throw new Error('API error ' + res.status); }
+      } catch (err) {
+        msgEl.style.display = 'block'; msgEl.style.background = '#fef2f2'; msgEl.style.color = '#991b1b'; msgEl.style.border = '1px solid #fecaca';
+        msgEl.textContent = 'Hubo un error. Intenta de nuevo.';
+      } finally { btn.disabled = false; btn.textContent = 'Suscribirme gratis'; }
+    };
+    $('freeSubmitBtn').addEventListener('click', (e) => submitFree(e.currentTarget));
+
+    // ---- Premium privacy gate → Stripe ----
+    const checkPremium = () => {
+      const c = $('premiumPrivacy').checked;
+      const err = $('premiumPrivacyErr');
+      if (!c) { err.style.display = 'block'; return; }
+      err.style.display = 'none';
+      window.location.href = STRIPE;
+    };
+    document.querySelectorAll('.js-premium').forEach((b) => b.addEventListener('click', checkPremium));
+
+    // ---- Promo popup (código único vía endpoint, countdown, prefill Stripe) ----
+    let promoInterval = null;
+    const RING_C = 2 * Math.PI * 44;
+
+    const dismissPromo = () => {
+      sessionStorage.setItem(SESSION_KEY, 'true');
+      $('promoOverlay').style.opacity = '0';
+      $('promoOverlay').style.pointerEvents = 'none';
+      $('promoModal').style.transform = 'translateY(20px)';
+      if (promoInterval) { clearInterval(promoInterval); promoInterval = null; }
+    };
+    const copyPromo = () => {
+      navigator.clipboard.writeText($('promoCode').textContent).then(() => {
+        const b = $('promoCopy'); b.textContent = '✓ Copiado';
+        setTimeout(() => { b.textContent = 'Copiar'; }, 2000);
+      });
+    };
+    const startTimer = () => {
+      let seconds = PROMO_SECONDS;
+      const timerEl = $('promoTimer');
+      const ring = $('promoRing');
+      ring.style.strokeDasharray = RING_C;
+      ring.style.strokeDashoffset = '0';
+      promoInterval = setInterval(() => {
+        seconds--;
+        if (seconds <= 0) { dismissPromo(); return; }
+        const m = Math.floor(seconds / 60);
+        const s = seconds % 60;
+        timerEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+        ring.style.strokeDashoffset = RING_C * (1 - seconds / PROMO_SECONDS);
+      }, 1000);
+    };
+    const showPromo = async () => {
+      try {
+        const res = await fetch(API + '/generate-promo', { method: 'POST', headers: { 'X-ALAS7-Secret': SECRET } });
+        const data = await res.json();
+        $('promoCode').textContent = data.code || 'ALAS7-2026';
+      } catch (e) {
+        $('promoCode').textContent = 'ALAS7-2026';
+      }
+      const code = $('promoCode').textContent;
+      $('promoCta').href = STRIPE + '?prefilled_promo_code=' + encodeURIComponent(code);
+      $('promoOverlay').style.opacity = '1';
+      $('promoOverlay').style.pointerEvents = 'all';
+      $('promoModal').style.transform = 'translateY(0)';
+      startTimer();
+    };
+    $('promoCopy').addEventListener('click', copyPromo);
+    $('promoClose').addEventListener('click', dismissPromo);
+    document.querySelectorAll('.js-promo-dismiss').forEach((b) => b.addEventListener('click', dismissPromo));
+    if (!sessionStorage.getItem(SESSION_KEY)) { setTimeout(showPromo, PROMO_DELAY); }
+
+    // ---- Scroll reveal ----
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'none';
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+});
+</script>
+</body>
+</html>

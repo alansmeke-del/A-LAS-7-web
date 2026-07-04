@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static HTML landing page for **Vita News** (vitanews.com.mx), a Spanish-language business newsletter. The entire site is a single file: `index.html` (~1020 lines) with embedded CSS and JavaScript. There is no build system, package manager, or framework.
+Static HTML landing page for **A LAS 7** (alas7.com), a Spanish-language business newsletter. The entire site is a single file: `index.html` (~1020 lines) with embedded CSS and JavaScript. There is no build system, package manager, or framework.
 
-**Deployment**: Git push to `main` → GitHub Pages auto-publishes to vitanews.com.mx (CNAME file).
+**Deployment**: Git push to `main` → GitHub Pages auto-publishes to alas7.com (CNAME file).
 
 ## Development
 
@@ -29,7 +29,7 @@ Everything lives in `index.html`, organized in this order:
    - Free-tier modal open/close logic (closes on overlay click or ✕ button; resets privacy checkbox state on close)
    - Privacy checkbox gate: the free modal submit button starts `disabled` and is only enabled after the checkbox fires `toggleFreeBtn()`; the premium button calls `checkPremiumPrivacy()` before redirecting to Stripe
    - Email subscription POST to Railway proxy (`gentle-laughter-production-7f2c.up.railway.app/subscribe`), which forwards to the MailerLite API (group ID `187372665902728776`)
-5. **Stripe** checkout links are plain `<a href>` / `window.location.href` pointing to a Stripe-hosted payment page (`buy.stripe.com/cNi14nfszgheexEdoYafS00`).
+5. **Stripe** checkout links are plain `<a href>` / `window.location.href` pointing to a Stripe-hosted payment page (`buy.stripe.com/14AcN50xF8OM2OW4SsafS01`).
 
 ## Key Integrations
 
@@ -38,7 +38,7 @@ Everything lives in `index.html`, organized in this order:
 | Email subscriptions (free tier) | POST to Railway proxy → MailerLite group |
 | Premium plan checkout | `checkPremiumPrivacy()` → `window.location.href` to Stripe URL |
 | Referral tracking | `?ref=` URL param → hidden input → subscribe payload field `referral_code` |
-| Domain | `CNAME` file → vitanews.com.mx via GitHub Pages |
+| Domain | `CNAME` file → alas7.com via GitHub Pages |
 
 ## Conventions
 
