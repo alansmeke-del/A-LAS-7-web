@@ -16,6 +16,37 @@
   @keyframes a7spinr{to{transform:rotate(-360deg)}}
   @keyframes a7pulse{0%,100%{opacity:.35}50%{opacity:1}}
   @keyframes a7float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+  /* ---- Responsive (los estilos base son inline, por eso !important) ---- */
+  @media (max-width:768px){
+    .a7-hero{grid-template-columns:1fr!important;gap:44px!important;padding-top:48px!important;padding-bottom:44px!important}
+    .a7-h1{font-size:calc(1.8rem + 1.25vw)!important}
+    .a7-grid2{grid-template-columns:1fr!important}
+    .a7-grid3{grid-template-columns:1fr!important}
+    .a7-footer-grid{grid-template-columns:1fr 1fr!important;gap:30px!important}
+    .a7-br{display:none}
+  }
+  @media (max-width:640px){
+    .a7-header-inner{padding:12px 16px!important;gap:10px!important}
+    .a7-logo>span:first-child{font-size:18px!important}
+    .a7-nav{gap:2px!important}
+    .a7-nav a{padding:7px 8px!important;font-size:12.5px!important}
+    .a7-nav button{padding:8px 12px!important;font-size:12.5px!important;margin-left:2px!important}
+  }
+  @media (max-width:480px){
+    section{padding-left:20px!important;padding-right:20px!important}
+    footer{padding-left:20px!important;padding-right:20px!important}
+    .a7-hero{gap:36px!important}
+    .a7-footer-grid{grid-template-columns:1fr!important}
+  }
+  @media (max-width:480px){
+    .a7-promo-title{font-size:1.3rem!important}
+    #promoCode{font-size:1.1rem!important;padding:13px 13px!important}
+    #freeModalCard{padding:28px 22px 24px!important}
+  }
+  @media (max-width:400px){
+    .a7-plink{display:none!important}
+  }
 </style>
 </head>
 <body>
@@ -24,14 +55,14 @@
 
 <!-- ============ HEADER ============ -->
 <header style="position:sticky;top:0;z-index:50;background:rgba(246,242,234,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,39,61,.1)">
-  <div style="max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px">
-    <a href="#top" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#14273D">
-      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;letter-spacing:.01em;color:#14273D">A LAS</span>
+  <div class="a7-header-inner" style="max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="#top" class="a7-logo" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#14273D;flex-shrink:0">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;letter-spacing:.01em;color:#14273D;white-space:nowrap">A LAS</span>
       <span style="width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid #14273D;border-radius:50%"><img src="assets/logo7-v2.png" alt="7" style="height:19px;width:auto;display:block"></span>
     </a>
-    <nav style="display:flex;align-items:center;gap:6px">
+    <nav class="a7-nav" style="display:flex;align-items:center;gap:6px">
       <a href="#preview" style="display:none;padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px" class="a7navlink">Vista previa</a>
-      <a href="#planes" class="a7navlink" style="padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px">Planes</a>
+      <a href="#planes" class="a7navlink a7-plink" style="padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px">Planes</a>
       <a href="#" class="js-open-free" style="padding:8px 13px;font-size:13.5px;font-weight:500;color:#3A3A34;text-decoration:none;border-radius:7px">Gratis</a>
       <button class="js-premium" style="margin-left:6px;padding:9px 17px;font-size:13.5px;font-weight:600;color:#14273D;background:#C08A2D;border:none;border-radius:8px;cursor:pointer;font-family:inherit">Suscribirme →</button>
     </nav>
@@ -41,12 +72,12 @@
 <span id="top"></span>
 
 <!-- ============ HERO ============ -->
-<section style="max-width:1120px;margin:0 auto;padding:70px 28px 60px;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center">
+<section class="a7-hero" style="max-width:1120px;margin:0 auto;padding:70px 28px 60px;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center">
   <div>
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1);display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8C5E17;font-weight:500;margin-bottom:22px">
       <span style="width:26px;height:1px;background:#C08A2D;display:block"></span>Todos los días · 7:00 AM · 5 minutos
     </div>
-    <h1 data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .06s;font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.4rem,4.8vw,3.9rem);line-height:1.08;letter-spacing:-.015em;color:#14273D;margin-bottom:22px">Antes de mover tu dinero hoy,<br>entiende por qué.</h1>
+    <h1 data-reveal class="a7-h1" style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .06s;font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.4rem,4.8vw,3.9rem);line-height:1.08;letter-spacing:-.015em;color:#14273D;margin-bottom:22px">Antes de mover tu dinero hoy,<br class="a7-br">entiende por qué.</h1>
     <p data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .12s;font-size:1.16rem;line-height:1.62;color:#4A4740;max-width:520px;margin-bottom:14px">A LAS 7 te explica qué pasó con el peso, las tasas y tu dinero en <strong style="color:#14273D;font-weight:600">5 minutos</strong>, cada mañana. Sin jerga, sin ruido, sin leer diez fuentes.</p>
     <p data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .16s;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#78736A;letter-spacing:.02em;margin-bottom:30px">Para profesionales de 25 a 40 en México que quieren decidir mejor.</p>
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .2s;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
@@ -111,7 +142,7 @@
     <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8C5E17;margin-bottom:12px">Qué es A LAS 7</div>
     <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.15;color:#14273D;max-width:640px;margin:0 auto">Un correo. Cada mañana. Y por fin entiendes tu dinero.</h2>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+  <div class="a7-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px solid rgba(20,39,61,.1);border-radius:16px;padding:30px 26px">
       <div style="width:44px;height:44px;border:1.5px solid #C08A2D;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;color:#14273D;margin-bottom:20px">5′</div>
       <div style="font-family:'Newsreader',serif;font-size:1.35rem;color:#14273D;margin-bottom:8px">Se lee en 5 minutos</div>
@@ -137,7 +168,7 @@
     <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#78736A">Gratis vs. Premium</span>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+  <div class="a7-grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
     <!-- GRATIS -->
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px solid rgba(20,39,61,.12);border-radius:16px;overflow:hidden">
       <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#F1EBE0;border-bottom:1px solid rgba(20,39,61,.1)">
@@ -186,7 +217,7 @@
       <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#DBA845;margin-bottom:12px">Elige tu plan</div>
       <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.9rem,3.6vw,2.7rem);color:#F6F2EA;line-height:1.15">Empieza gratis. Sube a Premium cuando quieras más.</h2>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+    <div class="a7-grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
       <!-- FREE -->
       <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#182E48;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:34px 30px">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8FA0B4;margin-bottom:14px">Plan Gratuito</div>
@@ -229,7 +260,7 @@
     <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8C5E17;margin-bottom:12px">Lo que dicen los lectores</div>
     <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.4rem);color:#14273D">Miles empiezan su día A LAS 7</h2>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+  <div class="a7-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1) .05s;background:#fff;border:1px dashed rgba(20,39,61,.28);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;min-height:210px">
       <div style="font-family:'Newsreader',serif;font-size:2.4rem;color:#C08A2D;line-height:.4;height:18px">“</div>
       <p style="flex:1;font-size:14px;line-height:1.6;color:#9A958B;font-style:italic">Espacio reservado para un testimonio real. Aquí irá la frase textual de un lector cuando lo tengas.</p>
@@ -264,7 +295,7 @@
 <!-- ============ FOOTER ============ -->
 <footer style="background:#14273D;color:#B9C4D2;padding:56px 28px 28px">
   <div style="max-width:1120px;margin:0 auto">
-    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)">
+    <div class="a7-footer-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)">
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Newsreader',serif;font-size:19px;font-weight:600;color:#F6F2EA">A LAS</span><span style="width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border:1.4px solid #DBA845;border-radius:50%"><img src="assets/logo7-v2.png" alt="7" style="height:17px;width:auto;display:block"></span></div>
         <p style="font-size:13.5px;line-height:1.6;color:#8FA0B4;max-width:280px">El newsletter que te explica la economía en tu idioma. Cada mañana, a las 7 en punto.</p>
@@ -317,7 +348,7 @@
           <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:500;color:#14273D" id="promoTimer">5:00</div>
         </div>
         <div>
-          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:1.55rem;line-height:1.1;color:#14273D;margin-bottom:5px">Un descuento, solo para ti</h3>
+          <h3 class="a7-promo-title" style="font-family:'Newsreader',serif;font-weight:600;font-size:1.55rem;line-height:1.1;color:#14273D;margin-bottom:5px">Un descuento, solo para ti</h3>
           <div style="font-size:12.5px;color:#7A5615;font-weight:600">Aplícalo antes de que expire el código</div>
         </div>
       </div>
